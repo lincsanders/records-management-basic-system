@@ -48,7 +48,7 @@ return array(
 			),
 		),
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/csv-imports.db',
+			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/jr-site-visits.db',
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

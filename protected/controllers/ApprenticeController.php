@@ -27,7 +27,7 @@ class ApprenticeController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('listAll'),
+				'actions'=>array('listAll', 'xml'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -38,6 +38,28 @@ class ApprenticeController extends Controller
 				'users'=>array('*'),
 			),
 		);
+	}
+
+	public function actionXml(){
+		$criteria = new CDbCriteria;
+		$fieldOfficer = ($_GET['field_officer'] ? $_GET['field_officer'] : $_POST['field_officer']);
+
+		if($fieldOfficer){
+			$criteria->condition = "field_officer = ?";
+			$criteria->params = array(
+				$fieldOfficer,
+			);
+		}
+		
+		$apprentices = Apprentice::model()->findAll($criteria);
+
+		$xml = new XMLParser;
+		$xml->setAdditionalParam('plist', array('version' => '1.0'));
+
+		foreach($apprentices as $apprentice)
+			$aps[$apprentice->training_id] = $apprentice->attributes;
+
+		echo $xml->arrayToXML($aps);
 	}
 
 	public function actionListAll(){

@@ -27,9 +27,10 @@ class ImportCommand extends CConsoleCommand {
         
         // Read dir
         while($docId = readdir($dirHandle)) {
-            if(Import::model()->app()->exists('filename = ?', array($docId)))
-                echo "> Skipping $docId, already imported" . "\n";
-            elseif($docId != "." && $docId != ".."){
+            if($docId != "." && $docId != ".."){
+                //Flush DB
+                Apprentice::model()->deleteAll();
+
                 $this->newImport($docId, Import::APPRENTICE);
 
                 $handle = fopen($dir . $docId, 'r');
@@ -49,9 +50,10 @@ class ImportCommand extends CConsoleCommand {
         
         // Read dir
         while($docId = readdir($dirHandle)) {
-            if(Import::model()->vis()->exists('filename = ?', array($docId)))
-                echo "> Skipping $docId, already imported" . "\n";
-            elseif($docId != "." && $docId != ".."){
+            if($docId != "." && $docId != ".."){
+                //Flush DB
+                Visit::model()->deleteAll();
+                
                 $this->newImport($docId, Import::VISIT);
 
                 $handle = fopen($dir . $docId, 'r');
