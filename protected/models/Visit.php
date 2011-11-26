@@ -35,6 +35,11 @@ class Visit extends CActiveRecord
 		return 'visits';
 	}
 
+	public function getApprentice(){
+
+		return Apprentice::model()->findAll('training_id = ?', array($this->training_id));
+	}
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */

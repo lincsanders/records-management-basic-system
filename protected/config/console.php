@@ -10,7 +10,7 @@ return CMap::mergeArray(
 		// application components
 		'components'=>array(
 			'db'=>array(
-				'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/csv-imports.db',
+				'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/jr-site-visits.db',
 			),
 			// uncomment the following to use a MySQL database
 			/*

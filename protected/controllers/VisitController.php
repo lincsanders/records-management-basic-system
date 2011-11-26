@@ -27,7 +27,7 @@ class VisitController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('listAll'),
+				'actions'=>array('listAll', 'json'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -38,6 +38,42 @@ class VisitController extends Controller
 				'users'=>array('*'),
 			),
 		);
+	}
+
+	public function actionJson(){
+		$criteria = new CDbCriteria;
+		$fieldOfficer = ($_GET['field_officer'] ? $_GET['field_officer'] : $_POST['field_officer']);
+
+		if($fieldOfficer){
+			$criteria->condition = "field_officer = ?";
+			$criteria->params = array(
+				$fieldOfficer,
+			);
+		}
+		
+		$visits = Visit::model()->findAll($criteria);
+
+		foreach($visits as $visit)
+			$vs[] = $visit->attributes;
+
+		echo CJSON::encode($vs);
+	}
+
+	public function actionNewVisit(){
+
+		if($fieldOfficer){
+			$criteria->condition = "field_officer = ?";
+			$criteria->params = array(
+				$fieldOfficer,
+			);
+		}
+		
+		$visits = Visit::model()->findAll($criteria);
+
+		foreach($visits as $visit)
+			$vs[] = $visit->attributes;
+
+		echo CJSON::encode($vs);
 	}
 
 	public function actionListAll(){
