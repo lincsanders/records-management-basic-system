@@ -4,7 +4,9 @@ class m111010_192211_list_migrations_and_prevent_dupe_imports extends CDbMigrati
 	public function safeUp(){
 		$this->createTable('imports', array(
 			'id' => 'pk',
+			'type' => 'varchar(15)',
 			'filename' => 'varchar(150)',
+			'datetime' => 'datetime',
 		));
 
 		$this->createTable('apprentices', array(

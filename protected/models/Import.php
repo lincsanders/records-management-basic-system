@@ -9,6 +9,9 @@
  */
 class Import extends CActiveRecord
 {
+	const APPRENTICE = 'apprentice';
+	const VISIT = 'visit';
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return Import the static model class
@@ -16,6 +19,25 @@ class Import extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function scopes(){
+		
+		return array(
+			'app' => array(
+				'condition' => "type = '".self::APPRENTICE."'",
+			),
+			'vis' => array(
+				'condition' => "type = '".self::VISIT."'",
+			),
+		);
+	}
+
+	public function beforeSave(){
+		
+		$this->datetime = date('Y-m-d H:i:s');
+
+		return parent::beforeSave();
 	}
 
 	/**
@@ -35,6 +57,8 @@ class Import extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('filename', 'length', 'max'=>150),
+			array('type', 'length', 'max'=>15),
+			array('datetime', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, filename', 'safe', 'on'=>'search'),

@@ -1,5 +1,6 @@
 <?php
 
+date_default_timezone_set('Australia/Sydney');
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -8,7 +9,6 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'CEG CSV Imports/Displays',
-
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -20,14 +20,14 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'spare*',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array('*'),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -35,18 +35,18 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'returnUrl' => 'apprentice/index',
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/csv-imports.db',
 		),
@@ -77,6 +77,7 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'lincoln@paperton.com',
 		'dir.apprentices' => (string)dirname(__FILE__).DIRECTORY_SEPARATOR.'../data/uploads/apprentices/',
-		'dir.visits' => dirname(__FILE__).DIRECTORY_SEPARATOR.'../data/uploads/apprentices/',
+		'dir.visits' => dirname(__FILE__).DIRECTORY_SEPARATOR.'../data/uploads/visits/',
+		'homeUrl' => 'site/login',
 	),
 );

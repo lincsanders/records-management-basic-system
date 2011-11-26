@@ -71,14 +71,14 @@ class Visit extends CActiveRecord
 		return array(
 			'id' => 'Id',
 			'import_id' => 'Import',
-			'training_id' => 'Training',
-			'visit_id' => 'Visit',
+			'training_id' => 'Training ID',
+			'visit_id' => 'Visit ID',
 			'field_officer' => 'Field Officer',
 			'due_date' => 'Due Date',
 			'completed_date' => 'Completed Date',
 			'apprentice_first_name' => 'Apprentice First Name',
 			'apprentice_surname' => 'Apprentice Surname',
-			'employer_id' => 'Employer',
+			'employer_id' => 'Employer ID',
 			'employer_name' => 'Employer Name',
 		);
 	}

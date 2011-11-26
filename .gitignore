@@ -1,2 +1,4 @@
 protected/runtime/*
 protected/data/*
+assets/
+assets/*
