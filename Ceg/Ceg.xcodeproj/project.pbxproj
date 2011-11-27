@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20C5908814812E7A00B54FD5 /* CEGDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C5908714812E7A00B54FD5 /* CEGDataSource.m */; };
+		20C5908B14813BA200B54FD5 /* CEGCoreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C5908A14813BA200B54FD5 /* CEGCoreDataHandler.m */; };
+		20C59090148146E300B54FD5 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C5908F148146E300B54FD5 /* JSONKit.m */; };
+		20C590DA1481597100B54FD5 /* CEGVisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C590D81481597000B54FD5 /* CEGVisitViewController.m */; };
+		20C590DB1481597100B54FD5 /* CEGVisitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C590D91481597100B54FD5 /* CEGVisitViewController.xib */; };
+		20C590DE148163F400B54FD5 /* CEG Non-BHP Visit Sheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 20C590DD148163F400B54FD5 /* CEG Non-BHP Visit Sheet.png */; };
+		20C590E514818F7C00B54FD5 /* autograph_x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20C590E114818F7C00B54FD5 /* autograph_x.png */; };
+		20C590E614818F7C00B54FD5 /* t1_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20C590E214818F7C00B54FD5 /* t1_logo.png */; };
+		20C590E714818F7C00B54FD5 /* libT1Autograph.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C590E314818F7C00B54FD5 /* libT1Autograph.a */; };
+		20C590EA148198CD00B54FD5 /* NSData+UTF8.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C590E9148198CD00B54FD5 /* NSData+UTF8.m */; };
+		20F5B6E8147D109000C0E8ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B6E7147D109000C0E8ED /* UIKit.framework */; };
+		20F5B6EA147D109000C0E8ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B6E9147D109000C0E8ED /* Foundation.framework */; };
+		20F5B6EC147D109000C0E8ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B6EB147D109000C0E8ED /* CoreGraphics.framework */; };
+		20F5B6EE147D109000C0E8ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B6ED147D109000C0E8ED /* CoreData.framework */; };
+		20F5B6F4147D109000C0E8ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20F5B6F2147D109000C0E8ED /* InfoPlist.strings */; };
+		20F5B6F6147D109000C0E8ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B6F5147D109000C0E8ED /* main.m */; };
+		20F5B6FA147D109000C0E8ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B6F9147D109000C0E8ED /* AppDelegate.m */; };
+		20F5B6FD147D109100C0E8ED /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F5B6FB147D109100C0E8ED /* MainStoryboard.storyboard */; };
+		20F5B700147D109100C0E8ED /* Ceg.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B6FE147D109100C0E8ED /* Ceg.xcdatamodeld */; };
+		20F5B703147D109100C0E8ED /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B702147D109100C0E8ED /* MasterViewController.m */; };
+		20F5B706147D109100C0E8ED /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B705147D109100C0E8ED /* DetailViewController.m */; };
+		20F5B70E147D109200C0E8ED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B70D147D109200C0E8ED /* SenTestingKit.framework */; };
+		20F5B70F147D109200C0E8ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B6E7147D109000C0E8ED /* UIKit.framework */; };
+		20F5B710147D109200C0E8ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B6E9147D109000C0E8ED /* Foundation.framework */; };
+		20F5B711147D109200C0E8ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5B6ED147D109000C0E8ED /* CoreData.framework */; };
+		20F5B719147D109200C0E8ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20F5B717147D109200C0E8ED /* InfoPlist.strings */; };
+		20F5B71C147D109200C0E8ED /* CegTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B71B147D109200C0E8ED /* CegTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20F5B712147D109200C0E8ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F5B6DA147D109000C0E8ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20F5B6E2147D109000C0E8ED;
+			remoteInfo = Ceg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20C5908614812E7A00B54FD5 /* CEGDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEGDataSource.h; sourceTree = "<group>"; };
+		20C5908714812E7A00B54FD5 /* CEGDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEGDataSource.m; sourceTree = "<group>"; wrapsLines = 0; };
+		20C5908914813BA200B54FD5 /* CEGCoreDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEGCoreDataHandler.h; sourceTree = "<group>"; };
+		20C5908A14813BA200B54FD5 /* CEGCoreDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEGCoreDataHandler.m; sourceTree = "<group>"; };
+		20C5908E148146E300B54FD5 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		20C5908F148146E300B54FD5 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		20C590D71481597000B54FD5 /* CEGVisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEGVisitViewController.h; sourceTree = "<group>"; };
+		20C590D81481597000B54FD5 /* CEGVisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEGVisitViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		20C590D91481597100B54FD5 /* CEGVisitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CEGVisitViewController.xib; sourceTree = "<group>"; };
+		20C590DD148163F400B54FD5 /* CEG Non-BHP Visit Sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CEG Non-BHP Visit Sheet.png"; sourceTree = "<group>"; };
+		20C590E114818F7C00B54FD5 /* autograph_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autograph_x.png; sourceTree = "<group>"; };
+		20C590E214818F7C00B54FD5 /* t1_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t1_logo.png; sourceTree = "<group>"; };
+		20C590E314818F7C00B54FD5 /* libT1Autograph.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libT1Autograph.a; path = Ceg/T1Autograph/libT1Autograph.a; sourceTree = "<group>"; };
+		20C590E414818F7C00B54FD5 /* T1Autograph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T1Autograph.h; sourceTree = "<group>"; };
+		20C590E8148198CC00B54FD5 /* NSData+UTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+UTF8.h"; sourceTree = "<group>"; };
+		20C590E9148198CD00B54FD5 /* NSData+UTF8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+UTF8.m"; sourceTree = "<group>"; };
+		20F5B6E3147D109000C0E8ED /* Ceg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ceg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F5B6E7147D109000C0E8ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		20F5B6E9147D109000C0E8ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20F5B6EB147D109000C0E8ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		20F5B6ED147D109000C0E8ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		20F5B6F1147D109000C0E8ED /* Ceg-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ceg-Info.plist"; sourceTree = "<group>"; };
+		20F5B6F3147D109000C0E8ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20F5B6F5147D109000C0E8ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20F5B6F7147D109000C0E8ED /* Ceg-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ceg-Prefix.pch"; sourceTree = "<group>"; };
+		20F5B6F8147D109000C0E8ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20F5B6F9147D109000C0E8ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20F5B6FC147D109100C0E8ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		20F5B6FF147D109100C0E8ED /* Ceg.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ceg.xcdatamodel; sourceTree = "<group>"; };
+		20F5B701147D109100C0E8ED /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		20F5B702147D109100C0E8ED /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		20F5B704147D109100C0E8ED /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		20F5B705147D109100C0E8ED /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		20F5B70C147D109200C0E8ED /* CegTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CegTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F5B70D147D109200C0E8ED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		20F5B716147D109200C0E8ED /* CegTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CegTests-Info.plist"; sourceTree = "<group>"; };
+		20F5B718147D109200C0E8ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20F5B71A147D109200C0E8ED /* CegTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CegTests.h; sourceTree = "<group>"; };
+		20F5B71B147D109200C0E8ED /* CegTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CegTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20F5B6E0147D109000C0E8ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F5B6E8147D109000C0E8ED /* UIKit.framework in Frameworks */,
+				20F5B6EA147D109000C0E8ED /* Foundation.framework in Frameworks */,
+				20F5B6EC147D109000C0E8ED /* CoreGraphics.framework in Frameworks */,
+				20F5B6EE147D109000C0E8ED /* CoreData.framework in Frameworks */,
+				20C590E714818F7C00B54FD5 /* libT1Autograph.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F5B708147D109200C0E8ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F5B70E147D109200C0E8ED /* SenTestingKit.framework in Frameworks */,
+				20F5B70F147D109200C0E8ED /* UIKit.framework in Frameworks */,
+				20F5B710147D109200C0E8ED /* Foundation.framework in Frameworks */,
+				20F5B711147D109200C0E8ED /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20C5908414812E2F00B54FD5 /* DataHandling */ = {
+			isa = PBXGroup;
+			children = (
+				20C5908C148146E300B54FD5 /* External Libraries */,
+				20C5908614812E7A00B54FD5 /* CEGDataSource.h */,
+				20C5908714812E7A00B54FD5 /* CEGDataSource.m */,
+				20C5908914813BA200B54FD5 /* CEGCoreDataHandler.h */,
+				20C5908A14813BA200B54FD5 /* CEGCoreDataHandler.m */,
+			);
+			path = DataHandling;
+			sourceTree = "<group>";
+		};
+		20C5908C148146E300B54FD5 /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				20C5908D148146E300B54FD5 /* JSON */,
+			);
+			path = "External Libraries";
+			sourceTree = "<group>";
+		};
+		20C5908D148146E300B54FD5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				20C5908E148146E300B54FD5 /* JSONKit.h */,
+				20C5908F148146E300B54FD5 /* JSONKit.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		20C590DC148163F400B54FD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20C590DD148163F400B54FD5 /* CEG Non-BHP Visit Sheet.png */,
+			);
+			name = Resources;
+			path = Ceg/Resources;
+			sourceTree = "<group>";
+		};
+		20C590DF14818F7C00B54FD5 /* T1Autograph */ = {
+			isa = PBXGroup;
+			children = (
+				20C590E014818F7C00B54FD5 /* Images */,
+				20C590E414818F7C00B54FD5 /* T1Autograph.h */,
+			);
+			path = T1Autograph;
+			sourceTree = "<group>";
+		};
+		20C590E014818F7C00B54FD5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				20C590E114818F7C00B54FD5 /* autograph_x.png */,
+				20C590E214818F7C00B54FD5 /* t1_logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		20F5B6D8147D109000C0E8ED = {
+			isa = PBXGroup;
+			children = (
+				20F5B6EF147D109000C0E8ED /* Ceg */,
+				20C590DC148163F400B54FD5 /* Resources */,
+				20F5B714147D109200C0E8ED /* CegTests */,
+				20F5B6E6147D109000C0E8ED /* Frameworks */,
+				20F5B6E4147D109000C0E8ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20F5B6E4147D109000C0E8ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B6E3147D109000C0E8ED /* Ceg.app */,
+				20F5B70C147D109200C0E8ED /* CegTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20F5B6E6147D109000C0E8ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20C590E314818F7C00B54FD5 /* libT1Autograph.a */,
+				20F5B6E7147D109000C0E8ED /* UIKit.framework */,
+				20F5B6E9147D109000C0E8ED /* Foundation.framework */,
+				20F5B6EB147D109000C0E8ED /* CoreGraphics.framework */,
+				20F5B6ED147D109000C0E8ED /* CoreData.framework */,
+				20F5B70D147D109200C0E8ED /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20F5B6EF147D109000C0E8ED /* Ceg */ = {
+			isa = PBXGroup;
+			children = (
+				20C590DF14818F7C00B54FD5 /* T1Autograph */,
+				20C5908414812E2F00B54FD5 /* DataHandling */,
+				20F5B6F8147D109000C0E8ED /* AppDelegate.h */,
+				20F5B6F9147D109000C0E8ED /* AppDelegate.m */,
+				20F5B6FB147D109100C0E8ED /* MainStoryboard.storyboard */,
+				20F5B701147D109100C0E8ED /* MasterViewController.h */,
+				20F5B702147D109100C0E8ED /* MasterViewController.m */,
+				20C590D71481597000B54FD5 /* CEGVisitViewController.h */,
+				20C590D81481597000B54FD5 /* CEGVisitViewController.m */,
+				20C590D91481597100B54FD5 /* CEGVisitViewController.xib */,
+				20F5B704147D109100C0E8ED /* DetailViewController.h */,
+				20F5B705147D109100C0E8ED /* DetailViewController.m */,
+				20F5B725147D197200C0E8ED /* Core Data Ascessors */,
+				20F5B6FE147D109100C0E8ED /* Ceg.xcdatamodeld */,
+				20F5B6F0147D109000C0E8ED /* Supporting Files */,
+				20C590E8148198CC00B54FD5 /* NSData+UTF8.h */,
+				20C590E9148198CD00B54FD5 /* NSData+UTF8.m */,
+			);
+			path = Ceg;
+			sourceTree = "<group>";
+		};
+		20F5B6F0147D109000C0E8ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B6F1147D109000C0E8ED /* Ceg-Info.plist */,
+				20F5B6F2147D109000C0E8ED /* InfoPlist.strings */,
+				20F5B6F5147D109000C0E8ED /* main.m */,
+				20F5B6F7147D109000C0E8ED /* Ceg-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20F5B714147D109200C0E8ED /* CegTests */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B71A147D109200C0E8ED /* CegTests.h */,
+				20F5B71B147D109200C0E8ED /* CegTests.m */,
+				20F5B715147D109200C0E8ED /* Supporting Files */,
+			);
+			path = CegTests;
+			sourceTree = "<group>";
+		};
+		20F5B715147D109200C0E8ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B716147D109200C0E8ED /* CegTests-Info.plist */,
+				20F5B717147D109200C0E8ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20F5B725147D197200C0E8ED /* Core Data Ascessors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data Ascessors";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20F5B6E2147D109000C0E8ED /* Ceg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F5B71F147D109200C0E8ED /* Build configuration list for PBXNativeTarget "Ceg" */;
+			buildPhases = (
+				20F5B6DF147D109000C0E8ED /* Sources */,
+				20F5B6E0147D109000C0E8ED /* Frameworks */,
+				20F5B6E1147D109000C0E8ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ceg;
+			productName = Ceg;
+			productReference = 20F5B6E3147D109000C0E8ED /* Ceg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20F5B70B147D109200C0E8ED /* CegTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F5B722147D109200C0E8ED /* Build configuration list for PBXNativeTarget "CegTests" */;
+			buildPhases = (
+				20F5B707147D109200C0E8ED /* Sources */,
+				20F5B708147D109200C0E8ED /* Frameworks */,
+				20F5B709147D109200C0E8ED /* Resources */,
+				20F5B70A147D109200C0E8ED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20F5B713147D109200C0E8ED /* PBXTargetDependency */,
+			);
+			name = CegTests;
+			productName = CegTests;
+			productReference = 20F5B70C147D109200C0E8ED /* CegTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20F5B6DA147D109000C0E8ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Paperton;
+			};
+			buildConfigurationList = 20F5B6DD147D109000C0E8ED /* Build configuration list for PBXProject "Ceg" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20F5B6D8147D109000C0E8ED;
+			productRefGroup = 20F5B6E4147D109000C0E8ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20F5B6E2147D109000C0E8ED /* Ceg */,
+				20F5B70B147D109200C0E8ED /* CegTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20F5B6E1147D109000C0E8ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F5B6F4147D109000C0E8ED /* InfoPlist.strings in Resources */,
+				20F5B6FD147D109100C0E8ED /* MainStoryboard.storyboard in Resources */,
+				20C590DB1481597100B54FD5 /* CEGVisitViewController.xib in Resources */,
+				20C590DE148163F400B54FD5 /* CEG Non-BHP Visit Sheet.png in Resources */,
+				20C590E514818F7C00B54FD5 /* autograph_x.png in Resources */,
+				20C590E614818F7C00B54FD5 /* t1_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F5B709147D109200C0E8ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F5B719147D109200C0E8ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20F5B70A147D109200C0E8ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20F5B6DF147D109000C0E8ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F5B6F6147D109000C0E8ED /* main.m in Sources */,
+				20F5B6FA147D109000C0E8ED /* AppDelegate.m in Sources */,
+				20F5B700147D109100C0E8ED /* Ceg.xcdatamodeld in Sources */,
+				20F5B703147D109100C0E8ED /* MasterViewController.m in Sources */,
+				20F5B706147D109100C0E8ED /* DetailViewController.m in Sources */,
+				20C5908814812E7A00B54FD5 /* CEGDataSource.m in Sources */,
+				20C5908B14813BA200B54FD5 /* CEGCoreDataHandler.m in Sources */,
+				20C59090148146E300B54FD5 /* JSONKit.m in Sources */,
+				20C590DA1481597100B54FD5 /* CEGVisitViewController.m in Sources */,
+				20C590EA148198CD00B54FD5 /* NSData+UTF8.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F5B707147D109200C0E8ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F5B71C147D109200C0E8ED /* CegTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20F5B713147D109200C0E8ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20F5B6E2147D109000C0E8ED /* Ceg */;
+			targetProxy = 20F5B712147D109200C0E8ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20F5B6F2147D109000C0E8ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20F5B6F3147D109000C0E8ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		20F5B6FB147D109100C0E8ED /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20F5B6FC147D109100C0E8ED /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		20F5B717147D109200C0E8ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20F5B718147D109200C0E8ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20F5B71D147D109200C0E8ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		20F5B71E147D109200C0E8ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20F5B720147D109200C0E8ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ceg/Ceg-Prefix.pch";
+				INFOPLIST_FILE = "Ceg/Ceg-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Ceg/T1Autograph\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		20F5B721147D109200C0E8ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ceg/Ceg-Prefix.pch";
+				INFOPLIST_FILE = "Ceg/Ceg-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Ceg/T1Autograph\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		20F5B723147D109200C0E8ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ceg.app/Ceg";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ceg/Ceg-Prefix.pch";
+				INFOPLIST_FILE = "CegTests/CegTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		20F5B724147D109200C0E8ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ceg.app/Ceg";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ceg/Ceg-Prefix.pch";
+				INFOPLIST_FILE = "CegTests/CegTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20F5B6DD147D109000C0E8ED /* Build configuration list for PBXProject "Ceg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F5B71D147D109200C0E8ED /* Debug */,
+				20F5B71E147D109200C0E8ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20F5B71F147D109200C0E8ED /* Build configuration list for PBXNativeTarget "Ceg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F5B720147D109200C0E8ED /* Debug */,
+				20F5B721147D109200C0E8ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20F5B722147D109200C0E8ED /* Build configuration list for PBXNativeTarget "CegTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F5B723147D109200C0E8ED /* Debug */,
+				20F5B724147D109200C0E8ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20F5B6FE147D109100C0E8ED /* Ceg.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20F5B6FF147D109100C0E8ED /* Ceg.xcdatamodel */,
+			);
+			currentVersion = 20F5B6FF147D109100C0E8ED /* Ceg.xcdatamodel */;
+			path = Ceg.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20F5B6DA147D109000C0E8ED /* Project object */;
+}

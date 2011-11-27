@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Apprentice" representedClassName="">
+        <attribute name="apprentice_date_of_birth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprentice_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprentice_first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprentice_mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprentice_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprentice_surname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprenticeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_postcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_suburb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expected_end_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="field_officer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="import_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="next_visit_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="training_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Form" syncable="YES">
+        <attribute name="accepts_instruction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="action_taken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="annual_leave_booked" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="any_leave_required" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_signature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="appearance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprentice_comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="atc_signature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="changes_to" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="consultant_comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emp_signature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="host_employer_comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="improvement_required_in" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motivation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profiling_book_able_to_get_signed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profiling_book_difficulties" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profiling_book_updated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rdo_booked" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skill_level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visit_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="warning_issued" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="work_attitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workmanship" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Visit" representedClassName="Visit" syncable="YES">
+        <attribute name="apprentice_first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apprentice_surname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="completed_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="due_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="field_officer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="import_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="training_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visit_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Apprentice" positionX="27" positionY="45" width="128" height="90"/>
+        <element name="Form" positionX="27" positionY="207" width="128" height="405"/>
+        <element name="Visit" positionX="261" positionY="198" width="128" height="75"/>
+    </elements>
+</model>
